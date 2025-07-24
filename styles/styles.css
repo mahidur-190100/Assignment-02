@@ -180,6 +180,175 @@
     font-size: 1.5rem;
 }
 
+.latest-pic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  max-width: 1140px;
+  margin: 120px auto 0;
+}
+
+.latest-pic1{
+    background-image: url(../assets/deal-bloom.png);
+    width: 366px;
+    height: 201px;
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 8px;
+}
+.latest-pic2{
+    background-image: url(../assets/deal-ana.png);
+    width: 366px;
+    height: 201px;
+    grid-column: 1;
+    border-radius: 8px;
+  
+}
+.latest-pic3{
+    background-image: url(../assets/deal-zabo.png);
+    width: 750px;
+    grid-column: 2;
+    grid-row: 1 / span 2; 
+    border-radius: 8px;
+}
+.latest-title1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+.latest-title2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+.latest-pic1 a,
+.latest-pic2 a,
+.latest-pic3 a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+.latest-pic1 ,
+.latest-pic2 ,
+.latest-pic3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.last{
+    width: 100%;
+    height: 530px;
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    margin: 100px auto 0;
+    background-position: center center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.last .input-group {
+    display: flex;
+    gap: 0px; 
+    margin-top: 20px; 
+}
+.last input[type="text"] {
+    width: 830px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0; 
+    height: 40px; 
+    box-sizing: border-box;
+    margin: 0;
+    border-right: none; 
+}
+
+.primary-btn1 { 
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    padding: 0 30px; 
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none;
+    height: 40px; 
+    margin: 0; 
+    white-space: nowrap; 
+}
+.brunch-title{
+    margin-bottom: 5px;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 1120px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.logo-column {
+  width: 135px;
+  flex: 2;
+}
+
+.footer-logo {
+  margin-bottom: 15px;
+}
+
+.footer-details {
+ color: gray;
+ font-size: 1.5rem;
+ width: 359px;
+
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: gray;
+  display: block; 
+}
+.social-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
 
 
 
@@ -272,5 +441,65 @@
 .plant-lover-img img{
     max-width: 100%;
 }
-    
+.latest-pic {
+  display: grid;
+  grid-template-columns: 1fr;      
+  gap: 20px;                       
+  justify-items: center;          
+  padding: 0 16px;                
+}
+.latest-pic1,
+.latest-pic2,
+.latest-pic3 {
+  width: 100%;                                  
+  height: 300px;                  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;        
+  align-items: center;           
+  text-align: center;
+  grid-column: auto !important;
+  grid-row: auto !important;
+}
+
+ .last {
+    width: 100%;
+    background-size: cover; 
+    background-position: center;
+    padding: 40px 20px; 
+    margin: 50px auto 0; 
+    display: flex;
+    align-items: center;
+  }
+
+  .brunch-title {
+    font-size: 1.5rem; 
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .input-group {
+   display: flex;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .last input[type="text"] {
+    width: 100%; 
+    margin-bottom: 10px; 
+    border-right: 1px solid #ccc; 
+  }
+
+  .primary-btn1 {
+    width: 50%; 
+  }
+  .footer-container {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 32px; /* Space between stacked columns */
+  }
+  
 }
