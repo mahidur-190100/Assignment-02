@@ -156,12 +156,21 @@
 }
 .plant-lover-img{
     max-width: 640px;
+    position: relative; /* badge er jonne */
 }
 .lover{
     margin-left: 50px;
 }
 .lover-description{
     font-size: 1.5rem;
+}
+/* badge er kaj */
+.badge{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    top: -100px;
+    right: -90px;
 }
 /*  body-4*/
 .body-4{
@@ -190,7 +199,7 @@
 }
 
 .latest-pic1{
-    background-image: url(../assets/deal-bloom.png);
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../assets/deal-bloom.png) ; /* bg liniear gradient */
     width: 366px;
     height: 201px;
     grid-column: 1;
@@ -198,18 +207,19 @@
     border-radius: 8px;
 }
 .latest-pic2{
-    background-image: url(../assets/deal-ana.png);
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../assets/deal-ana.png);
     width: 366px;
     height: 201px;
     grid-column: 1;
+    grid-row: 2;
     border-radius: 8px;
   
 }
 .latest-pic3{
-    background-image: url(../assets/deal-zabo.png);
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../assets/deal-zabo.png);
     width: 750px;
     grid-column: 2;
-    grid-row: 1 / span 2; 
+    grid-row: 1 / span 2; /* koita jaiga khabe sheta*/
     border-radius: 8px;
 }
 .latest-title1{
@@ -354,41 +364,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* small device */
 
 /* Small devices (up to 576px) */
@@ -451,6 +426,9 @@
     
     .plant-lover-img img {
         max-width: 100%;
+    }
+    .badge{
+        display: none;
     }
     
     .body-4 {
